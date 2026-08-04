@@ -2,6 +2,7 @@
 <html lang="fa" dir="rtl">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,98 +11,97 @@
 <style>
 
 *{
-    box-sizing:border-box;
-    font-family:tahoma;
+box-sizing:border-box;
+font-family:tahoma;
 }
 
 body{
-    margin:0;
-    background:#0b0b0b;
-    color:white;
+margin:0;
+background:#080808;
+color:white;
 }
 
 
-/* ورود */
-
 .hero{
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    background:
-    linear-gradient(#0008,#0008),
-    url("https://images.unsplash.com/photo-1513104890138-7c749659a591");
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:
+linear-gradient(#0008,#0008),
+url("https://images.unsplash.com/photo-1515003197210-e0cd71810b5f");
 
-    background-size:cover;
+background-size:cover;
 }
 
 
 .hero h1{
-    font-size:70px;
-    color:#d4af37;
-    letter-spacing:10px;
+font-size:75px;
+letter-spacing:12px;
+color:#d4af37;
+margin:0;
 }
 
 
 .hero p{
-    font-size:22px;
-    color:#ddd;
+font-size:22px;
+color:#ddd;
 }
 
 
-/* بخش ها */
 
 .container{
-    width:90%;
-    max-width:600px;
-    margin:auto;
+width:90%;
+max-width:650px;
+margin:auto;
 }
+
 
 
 .title{
-    text-align:center;
-    margin:40px 0;
-    color:#d4af37;
+text-align:center;
+color:#d4af37;
+margin:45px 0 20px;
 }
 
 
-/* پیشنهاد ویژه */
 
 .chef{
 
-background:
-linear-gradient(135deg,#3a2d00,#191919);
+background:linear-gradient(135deg,#4b3900,#181818);
 
 padding:25px;
 border-radius:25px;
 text-align:center;
-margin-bottom:30px;
 
 }
 
-
-/* کارت غذا */
 
 
 .card{
 
-background:#191919;
+background:#181818;
 border-radius:25px;
 overflow:hidden;
-margin:20px 0;
-animation:show .7s;
+margin:25px 0;
+
+animation:show .8s;
+
+box-shadow:0 10px 30px #000;
 
 }
+
 
 
 .card img{
 
 width:100%;
-height:220px;
+height:230px;
 object-fit:cover;
 
 }
+
 
 
 .info{
@@ -111,36 +111,64 @@ padding:20px;
 }
 
 
+
 .info h3{
 
 color:#d4af37;
+font-size:23px;
 
 }
+
+
+
+.info p{
+
+color:#bbb;
+
+}
+
 
 
 .price{
 
 font-size:20px;
 font-weight:bold;
-color:white;
 
 }
 
 
 
-/* دکمه */
-
 .order{
 
 display:block;
+
 background:#d4af37;
+
 color:#111;
+
 text-align:center;
+
 padding:18px;
+
 border-radius:40px;
+
 text-decoration:none;
+
 font-weight:bold;
-margin:40px 0;
+
+margin:50px 0;
+
+}
+
+
+
+.footer{
+
+text-align:center;
+
+padding:35px;
+
+color:#777;
 
 }
 
@@ -149,23 +177,18 @@ margin:40px 0;
 @keyframes show{
 
 from{
+
 opacity:0;
 transform:translateY(40px);
+
 }
 
 to{
+
 opacity:1;
 transform:translateY(0);
-}
 
 }
-
-
-.footer{
-
-text-align:center;
-padding:30px;
-color:#777;
 
 }
 
@@ -175,7 +198,9 @@ color:#777;
 </head>
 
 
+
 <body>
+
 
 
 <section class="hero">
@@ -199,6 +224,7 @@ Restaurant & Cafe
 <div class="container">
 
 
+
 <h2 class="title">
 ⭐ پیشنهاد ویژه سرآشپز
 </h2>
@@ -211,7 +237,7 @@ Restaurant & Cafe
 </h2>
 
 <p>
-گوشت تازه، پنیر مخصوص، سس دست‌ساز
+گوشت تازه، پنیر مخصوص و سس دست‌ساز
 </p>
 
 </div>
@@ -229,13 +255,9 @@ Restaurant & Cafe
 
 <div class="info">
 
-<h3>
-برگر کلاسیک
-</h3>
+<h3>برگر کلاسیک</h3>
 
-<p>
-برگر گوشت تازه با پنیر مخصوص
-</p>
+<p>گوشت تازه با پنیر مخصوص</p>
 
 <span class="price">
 ۲۵۵,۰۰۰ تومان
@@ -253,13 +275,9 @@ Restaurant & Cafe
 
 <div class="info">
 
-<h3>
-چیزبرگر
-</h3>
+<h3>چیزبرگر</h3>
 
-<p>
-پنیر آب شده و طعم خاص لونا
-</p>
+<p>برگر ویژه با پنیر آب شده</p>
 
 <span class="price">
 ۲۸۵,۰۰۰ تومان
@@ -271,9 +289,11 @@ Restaurant & Cafe
 
 
 
+
 <h2 class="title">
 🍕 پیتزا
 </h2>
+
 
 
 <div class="card">
@@ -282,13 +302,9 @@ Restaurant & Cafe
 
 <div class="info">
 
-<h3>
-پیتزا مخصوص
-</h3>
+<h3>پیتزا مخصوص</h3>
 
-<p>
-ترکیبی از بهترین مواد تازه
-</p>
+<p>ترکیبی از بهترین مواد تازه</p>
 
 <span class="price">
 ۵۵۵,۰۰۰ تومان
@@ -300,9 +316,118 @@ Restaurant & Cafe
 
 
 
+
+<h2 class="title">
+🍝 پاستا
+</h2>
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601">
+
+<div class="info">
+
+<h3>پاستا آلفردو</h3>
+
+<p>سس خامه‌ای با مرغ تازه</p>
+
+<span class="price">
+۳۷۵,۰۰۰ تومان
+</span>
+
+</div>
+
+</div>
+
+
+
+
+<h2 class="title">
+🥗 سالاد
+</h2>
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1546793665-c74683f339c1">
+
+<div class="info">
+
+<h3>سالاد سزار</h3>
+
+<p>مرغ گریل شده و سس مخصوص</p>
+
+<span class="price">
+۲۶۵,۰۰۰ تومان
+</span>
+
+</div>
+
+</div>
+
+
+
+
+<h2 class="title">
+🥤 نوشیدنی
+</h2>
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1544145945-f90425340c7e">
+
+<div class="info">
+
+<h3>موهیتو</h3>
+
+<p>نوشیدنی خنک مخصوص لونا</p>
+
+<span class="price">
+۱۶۵,۰۰۰ تومان
+</span>
+
+</div>
+
+</div>
+
+
+
+
+<h2 class="title">
+🍰 دسر
+</h2>
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187">
+
+<div class="info">
+
+<h3>چیزکیک</h3>
+
+<p>دسر لطیف و خوش‌طعم</p>
+
+<span class="price">
+۲۴۵,۰۰۰ تومان
+</span>
+
+</div>
+
+</div>
+
+
+
+
 <a class="order" href="#">
 📱 سفارش آنلاین
 </a>
+
 
 
 </div>
@@ -312,10 +437,13 @@ Restaurant & Cafe
 <div class="footer">
 
 LUNA Restaurant
+
 <br>
-Digital Menu 2026
+
+Digital Menu
 
 </div>
+
 
 
 </body>
