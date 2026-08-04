@@ -3,233 +3,321 @@
 
 <head>
 <meta charset="UTF-8">
-<title>منوی دیجیتال رستوران</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>LUNA Restaurant</title>
 
 <style>
 
-    .chef{
-    background:linear-gradient(135deg,#3a2d00,#1c1c1c);
-    border-radius:25px;
-    padding:25px;
-    margin-bottom:25px;
-    text-align:center;
+*{
+    box-sizing:border-box;
+    font-family:tahoma;
 }
 
-.chef h2{
+body{
+    margin:0;
+    background:#0b0b0b;
+    color:white;
+}
+
+
+/* ورود */
+
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:
+    linear-gradient(#0008,#0008),
+    url("https://images.unsplash.com/photo-1513104890138-7c749659a591");
+
+    background-size:cover;
+}
+
+
+.hero h1{
+    font-size:70px;
+    color:#d4af37;
+    letter-spacing:10px;
+}
+
+
+.hero p{
+    font-size:22px;
+    color:#ddd;
+}
+
+
+/* بخش ها */
+
+.container{
+    width:90%;
+    max-width:600px;
+    margin:auto;
+}
+
+
+.title{
+    text-align:center;
+    margin:40px 0;
     color:#d4af37;
 }
 
-.chef p{
-    font-size:22px;
-    font-weight:bold;
+
+/* پیشنهاد ویژه */
+
+.chef{
+
+background:
+linear-gradient(135deg,#3a2d00,#191919);
+
+padding:25px;
+border-radius:25px;
+text-align:center;
+margin-bottom:30px;
+
 }
 
-.chef span{
-    color:#ccc;
+
+/* کارت غذا */
+
+
+.card{
+
+background:#191919;
+border-radius:25px;
+overflow:hidden;
+margin:20px 0;
+animation:show .7s;
+
 }
 
-    .order{
-    display:block;
-    text-align:center;
-    background:#d4af37;
-    color:#111;
-    padding:16px;
-    border-radius:35px;
-    text-decoration:none;
-    font-size:20px;
-    font-weight:bold;
-    margin:30px 0;
-    transition:.3s;
+
+.card img{
+
+width:100%;
+height:220px;
+object-fit:cover;
+
 }
 
-.order:hover{
-    transform:scale(1.05);
+
+.info{
+
+padding:20px;
+
 }
 
-    .category{
-    animation:show .7s ease;
+
+.info h3{
+
+color:#d4af37;
+
 }
+
+
+.price{
+
+font-size:20px;
+font-weight:bold;
+color:white;
+
+}
+
+
+
+/* دکمه */
+
+.order{
+
+display:block;
+background:#d4af37;
+color:#111;
+text-align:center;
+padding:18px;
+border-radius:40px;
+text-decoration:none;
+font-weight:bold;
+margin:40px 0;
+
+}
+
+
 
 @keyframes show{
-    from{
-        opacity:0;
-        transform:translateY(30px);
-    }
 
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
+from{
+opacity:0;
+transform:translateY(40px);
 }
 
-    .logo-text{
-    font-size:55px;
-    font-weight:bold;
-    letter-spacing:8px;
-    color:#d4af37;
-    text-shadow:0 0 20px #d4af37;
+to{
+opacity:1;
+transform:translateY(0);
 }
 
-.header h1{
-    color:#fff;
-    font-size:22px;
-    margin:10px 0;
 }
 
-.header p{
-    color:#aaa;
-    font-size:16px;
+
+.footer{
+
+text-align:center;
+padding:30px;
+color:#777;
+
 }
 
-    .food-card{
-    background:#1c1c1c;
-    border-radius:25px;
-    overflow:hidden;
-    margin:20px 0;
-    box-shadow:0 10px 30px #000;
-    transition:.3s;
-}
 
-.food-card:hover{
-    transform:translateY(-8px);
-}
-
-.food-img{
-    width:100%;
-    height:200px;
-    object-fit:cover;
-}
-
-.food-info{
-    padding:20px;
-}
-
-.food-info h3{
-    color:#fff;
-    margin:0 0 10px;
-}
-
-.food-info p{
-    color:#aaa;
-}
-
-.food-price{
-    color:#d4af37;
-    font-size:20px;
-    font-weight:bold;
-}
-    
 </style>
 
 </head>
 
+
 <body>
 
-    <div class="splash">
 
-    <div class="splash-content">
-        <div class="icon">🍽️</div>
+<section class="hero">
 
-        <h1>LUNA</h1>
+<div>
 
-        <p>Digital Menu</p>
-
-        <span>تجربه‌ای متفاوت از طعم</span>
-    </div>
-
-</div>
-
-<div class="header">
-
-<div class="logo-text">
-LUNA
-</div>
-
-<h1>Restaurant & Cafe</h1>
+<h1>LUNA</h1>
 
 <p>
-تجربه‌ای متفاوت از طعم و کیفیت
+Restaurant & Cafe
+<br>
+تجربه‌ای متفاوت از طعم
 </p>
 
 </div>
 
+</section>
+
+
+
+<div class="container">
+
+
+<h2 class="title">
+⭐ پیشنهاد ویژه سرآشپز
+</h2>
+
+
 <div class="chef">
 
-<h2>⭐ پیشنهاد ویژه سرآشپز</h2>
+<h2>
+برگر مخصوص لونا
+</h2>
 
-<p>برگر مخصوص لونا</p>
-
-<span>
+<p>
 گوشت تازه، پنیر مخصوص، سس دست‌ساز
+</p>
+
+</div>
+
+
+
+<h2 class="title">
+🍔 برگرها
+</h2>
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd">
+
+<div class="info">
+
+<h3>
+برگر کلاسیک
+</h3>
+
+<p>
+برگر گوشت تازه با پنیر مخصوص
+</p>
+
+<span class="price">
+۲۵۵,۰۰۰ تومان
 </span>
 
 </div>
 
-    
-<div class="category">
-<h2>🍔 برگرها</h2>
+</div>
 
-<div class="item"><span>برگر کلاسیک</span><span class="price">۲۵۵,۰۰۰ تومان</span></div>
-<div class="item"><span>چیزبرگر</span><span class="price">۲۸۵,۰۰۰ تومان</span></div>
-<div class="item"><span>دبل برگر</span><span class="price">۳۶۵,۰۰۰ تومان</span></div>
-<div class="item"><span>برگر مخصوص سرآشپز</span><span class="price">۴۲۰,۰۰۰ تومان</span></div>
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
+
+<div class="info">
+
+<h3>
+چیزبرگر
+</h3>
+
+<p>
+پنیر آب شده و طعم خاص لونا
+</p>
+
+<span class="price">
+۲۸۵,۰۰۰ تومان
+</span>
+
+</div>
 
 </div>
 
 
-<div class="category">
-<h2>🍕 پیتزا</h2>
 
-<div class="item"><span>پپرونی</span><span class="price">۴۳۵,۰۰۰ تومان</span></div>
-<div class="item"><span>مارگاریتا</span><span class="price">۳۹۵,۰۰۰ تومان</span></div>
-<div class="item"><span>چهار فصل</span><span class="price">۴۸۵,۰۰۰ تومان</span></div>
-<div class="item"><span>مخصوص</span><span class="price">۵۵۵,۰۰۰ تومان</span></div>
+<h2 class="title">
+🍕 پیتزا
+</h2>
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1513104890138-7c749659a591">
+
+<div class="info">
+
+<h3>
+پیتزا مخصوص
+</h3>
+
+<p>
+ترکیبی از بهترین مواد تازه
+</p>
+
+<span class="price">
+۵۵۵,۰۰۰ تومان
+</span>
+
+</div>
 
 </div>
 
 
-<div class="category">
-<h2>🍝 پاستا</h2>
 
-<div class="item"><span>آلفردو</span><span class="price">۳۷۵,۰۰۰ تومان</span></div>
-<div class="item"><span>پنه مرغ</span><span class="price">۳۵۵,۰۰۰ تومان</span></div>
-<div class="item"><span>بلونز</span><span class="price">۳۹۵,۰۰۰ تومان</span></div>
-
-</div>
-
-
-<div class="category">
-<h2>🥗 سالاد</h2>
-
-<div class="item"><span>سالاد سزار</span><span class="price">۲۶۵,۰۰۰ تومان</span></div>
-<div class="item"><span>سالاد یونانی</span><span class="price">۲۴۵,۰۰۰ تومان</span></div>
-
-</div>
-
-
-<div class="category">
-<h2>🥤 نوشیدنی</h2>
-
-<div class="item"><span>موهیتو</span><span class="price">۱۶۵,۰۰۰ تومان</span></div>
-<div class="item"><span>لیموناد</span><span class="price">۱۳۵,۰۰۰ تومان</span></div>
-<div class="item"><span>آیس لاته</span><span class="price">۱۹۵,۰۰۰ تومان</span></div>
-<div class="item"><span>کوکاکولا</span><span class="price">۸۵,۰۰۰ تومان</span></div>
-
-</div>
-
-
-<div class="category">
-<h2>🍰 دسر</h2>
-
-<div class="item"><span>چیزکیک</span><span class="price">۲۴۵,۰۰۰ تومان</span></div>
-<div class="item"><span>براونی شکلاتی</span><span class="price">۲۱۵,۰۰۰ تومان</span></div>
-<div class="item"><span>تیرامیسو</span><span class="price">۲۶۵,۰۰۰ تومان</span></div>
-
-</div>
-
-<a class="order" href="https://wa.me/989000000000">
+<a class="order" href="#">
 📱 سفارش آنلاین
 </a>
-    
+
+
+</div>
+
+
+
+<div class="footer">
+
+LUNA Restaurant
+<br>
+Digital Menu 2026
+
+</div>
+
+
 </body>
+
 </html>
