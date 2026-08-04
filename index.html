@@ -577,6 +577,21 @@ font-size:12px;
 margin:30px 0;
 
 }
+
+    @media print {
+  body {
+    display: none;
+  }
+}
+    .demo-watermark{
+position:fixed;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%) rotate(-30deg);
+font-size:60px;
+color:#0002;
+z-index:9999;
+}
     
 </style>
 
@@ -585,7 +600,10 @@ margin:30px 0;
 
 <body>
 
-
+<div class="demo-watermark">
+Sample Preview
+</div>
+    
 <div class="loader">
 <h1>LUNA</h1>
 </div>
